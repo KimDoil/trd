@@ -1,0 +1,247 @@
+#!/system/bin/sh
+
+#Information (OS,version,language) :Android:5:ko
+
+#This script made by Kim-Doil
+
+#Do NOT modfly
+
+trdi_os=Android
+trdi_version=5
+trdi_lang=ko
+
+if [ ! $1 ]
+then
+
+echo "Usage: ./trdi.sh <arg>
+Args:
+
+install: 
+
+Installing and update trd script.
+
+remove: 
+
+Remove trd script.
+
+sys_install
+
+Need root permission.
+Installing in bin folder and update trd script."
+
+exit 1
+
+fi
+
+data="IyEvc3lzdGVtL2Jpbi9zaAoj7ZWE7JqUIDogQnVzeWJveCwg7YWM7J287KaI7IO1IOyVsSDsvZTr
+k5wsIOuyhOyghCDsvZTrk5wKCiPsnbQg7Iqk7YGs66a97Yq464qUIEtpbS1Eb2lsIOydtCDrp4zr
+k6Tsl4jsirXri4jri6QuCgojSW5mb3JtYXRpb24gKE9TLOuyhOyghCzslrjslrQpIDpBbmRyb2lk
+OjU6a28KCiPrsKnsnbjslYTsnZgg6rK97JqwIDogIHAxMwoj642w65Oc7JeU65Oc7J2YIOqyveya
+sCA6IHAxNAoj7JWE66W067Kg64+E7J2YIOqyveyasCA6IHAxNQoj7Y+s7LaY7ZWY66qo64uI7J2Y
+IOqyveyasCA6IHAxNgoj64SL65GQ66as7J2YIOqyveyasCA6IHAxNwoj66+4656Y7Jes7Lmc7J2Y
+IOqyveyasCA6IHAxOAoj64uI6re466CI64+EIOudvOu5hOumsOyKpOydmCDqsr3smrAgOiBwMTkK
+I+yCsO2DgOuKlCDqtZDrs7XsnYQg7J6F7J2EIOyImCDrsJbsl5Ag7JeG7Ja07J2YIOqyveyasCA6
+IHAyMAoj66+4656Y7IS46rOE7J2YIOunueyduOydmCDqsr3smrAgOiBwMjEKCiMj67KE7KCEIOy9
+lOuTnCBEQgojIHAxMiB1bmRlciA6IFZlcnNpb24gY29kZSBpcyBudWxsCiMgcDEzIDogNSAjIHAx
+M19qIDogNAojIHAxNCA6IDMgIyBwMTRfaiA6IDUKIyBwMTUgOiAyCiMgcDE2IDogMgojIHAxNyA6
+IDIKIyBwMTggOiAxCiMgcDE5IDogMgojIHAyMCA6IDEKIyBwMjEgOiAxCiMjRU5ECgojI+ydtCDs
+hKTsoJXsnYQg7IiY7KCV7ZWgIOyImCDsnojsirXri4jri6QuCgpyZXNvbHV0aW9uPTcyMAoj7ZW0
+7IOB64+EIDcyMC80ODAKCiMjCgppZiBbICEgJDEgXQoKCXRoZW4KCgkJZWNobyAi7IKs7Jqp67KV
+OiB0cmQgKOyVsSDsvZTrk5wgW3B4eF0pICjrsoTsoITsvZTrk5wpIChhbGwsIHRzaSwgdHNtLCB0
+czQpIFsg7YyM7J28IO2BrOq4sCDqs4TsgrAg66y07IucICdjJyB8IO2MjOydvCDthYzsnbTruJTr
+p4wg67Cb6riwICd0JyBdIjsKCQlleGl0IDEKZmkKCmlmIFsgISAkMiBdCgoJdGhlbgoKCQllY2hv
+ICLsgqzsmqnrspU6IHRyZCAo7JWxIOy9lOuTnCBbcHh4XSkgKOuyhOyghCDsvZTrk5wpIChhbGws
+IHRzaSwgdHNtLCB0czQpIFsg7YyM7J28IO2BrOq4sCDqs4TsgrAg66y07IucICdjJyB8IO2MjOyd
+vCDthYzsnbTruJTrp4wg67Cb6riwICd0JyBdIjsKCQlleGl0IDIKZmkKCmlmIFsgISAkMyBdCgoJ
+dGhlbgoKCQllY2hvICLsgqzsmqnrspU6IHRyZCAo7JWxIOy9lOuTnCBbcHh4XSkgKOuyhOyghCDs
+vZTrk5wpIChhbGwsIHRzaSwgdHNtLCB0czQpIFsg7YyM7J28IO2BrOq4sCDqs4TsgrAg66y07Iuc
+ICdjJyB8IO2MjOydvCDthYzsnbTruJTrp4wg67Cb6riwICd0JyBdIjsKCQlleGl0IDMKZmkKCmVu
+dHJ5X29sZD0iJDFfcmVzb3VyY2UueG1sIgoKZW50cnlfbmV3MT0iJDFfdiQyX3Jlc291cmNlLnht
+bCIKCmVudHJ5X25ldzI9IiQxX3Jlc291cmNlX3YkMi54bWwiCgpkb3dubG9hZF9wYXRoPSIvc2Rj
+YXJkL3RhbGVzc2hvcC9kb3dubG9hZC8kMSIKCiPtj7TrjZQg7LK07YGsIOuwjyDsg53shLEKaWYg
+WyAhIC1yIC9zZGNhcmQvdGFsZXNzaG9wL2Rvd25sb2FkIF0KdGhlbgpta2RpciAvc2RjYXJkL3Rh
+bGVzc2hvcC9kb3dubG9hZApmaQoKaWYgWyAhIC1yIC9zZGNhcmQvdGFsZXNzaG9wL2Rvd25sb2Fk
+LyQxIF0KdGhlbgpta2RpciAvc2RjYXJkL3RhbGVzc2hvcC9kb3dubG9hZC8kMQpmaQoKY2QgJGRv
+d25sb2FkX3BhdGgKCmRvd25sb2FkPSJodHRwOi8vdGFsZXNzaG9wLmhzY2RuLmNvbS8kMSIKCmlm
+IFsgISAtciAkZG93bmxvYWRfcGF0aC9yZXNvdXJjZS54bWwgXQp0aGVuCgplY2hvICfsmKTrnpjr
+kJwg7YWM7J2067iUIOuLpOyatOuhnOuTnCDsi5zrj4TspJEuLi4nCmJ1c3lib3ggd2dldCAtcSAt
+TyByZXNvdXJjZS54bWwgJGRvd25sb2FkLyRlbnRyeV9vbGQKCmlmIFsgISAkPyA9IDAgXQp0aGVu
+CgplY2hvICfri6TsmrTroZzrk5wg7Iuk7YyoLiAo7Jik656Y65CcIO2FjOydtOu4lCknCgplY2hv
+ICfquLDrs7gg7YWM7J2067iUIDEg64uk7Jq066Gc65OcIOyLnOuPhOykkS4uLicKYnVzeWJveCB3
+Z2V0IC1xIC1PIHJlc291cmNlLnhtbCAkZG93bmxvYWQvJGVudHJ5X25ldzEKCmlmIFsgISAkPyA9
+IDAgXQp0aGVuCgplY2hvICfri6TsmrTroZzrk5wg7Iuk7YyoLiAo6riw67O4IO2FjOydtOu4lCAx
+KScKCmVjaG8gJ+q4sOuzuCDthYzsnbTruJQgMiDri6TsmrTroZzrk5wg7Iuc64+E7KSRLi4uJwpi
+dXN5Ym94IHdnZXQgLXEgLU8gcmVzb3VyY2UueG1sICRkb3dubG9hZC8kZW50cnlfbmV3MgoKZmkK
+CmZpCgplbHNlCgpyZXNvbHV0aW9uPQoKZmkKCmlmIFsgJD8gPSAxIF0KdGhlbgoKZWNobyAn64uk
+7Jq066Gc65OcIOyLpO2MqC4gKOq4sOuzuCDthYzsnbTruJQgMiknCgplY2hvICftjIzsnbwg7YWM
+7J2067iUIOuLpOyatOuhnOuTnCDsi6TtjKguJzsKCmV4aXQgMwoKZWxzZQoKZWNobyAn7YyM7J28
+IO2FjOydtOu4lCDri6TsmrTroZzrk5wg7ISx6rO1Lic7CgpmaQoKZWNobyAiJDQiIHwgZ3JlcCAn
+YycKCmlmIFsgISAkPyA9IDEgXQp0aGVuCgplY2hvICftgazquLAg6rOE7IKwIOqxtOuEiOucgC4n
+CgplbHNlCgplY2hvICftjIzsnbwg7YGs6riwIOqzhOyCsOykkS4uLicKCnRvdGFsPScwJwoKaWYg
+WyAtciAkZG93bmxvYWRfcGF0aC8uc2l6ZV93YWl0IF0KdGhlbgoKdG91Y2ggLnNpemVfd2FpdApm
+aQoKaWYgWyAtciAkZG93bmxvYWRfcGF0aC8uc2l6ZSBdCnRoZW4KCnRvdWNoIC5zaXplCmZpCgpn
+cmVwICJzaXplIiByZXNvdXJjZS54bWwgfCBjdXQgLWQgJyInIC1mIDQgPiAuc2l6ZQoKd2hpbGUg
+WyAtcyAuc2l6ZSBdCmRvCgpmc2l6ZT1gc2VkIC1uIDFwIC5zaXplYAoKdG90YWw9YGV4cHIgIiR0
+b3RhbCIgIisiICIkZnNpemUiYAoKc2VkIDFkIC5zaXplID4gLnNpemVfd2FpdAoKY2F0IC5zaXpl
+X3dhaXQgPiAuc2l6ZQoKZG9uZQoKcm0gLnNpemUKcm0gLnNpemVfd2FpdAoKdG90YWw9YGV4cHIg
+IiR0b3RhbCIgIi8iICIxMDI0ImAKCmVjaG8gIuy0nSDtjIzsnbwg7IKs7J207KaIOiAkKCggJHRv
+dGFsIC8gMTAyNCApKSBNQiIKCmZpCgplY2hvICLrjIDquLDspJEuLi4gKDXstIgpIgpzbGVlcCA1
+Cgpzb3VyY2VfcGF0aD1gZ3JlcCBwYXRoJHJlc29sdXRpb249IC4vcmVzb3VyY2UueG1sIHwgY3V0
+IC1kICciJyAtZiA0YAoKaWYgWyAtciAkZG93bmxvYWRfcGF0aC8udGFibGVfd2FpdCBdCnRoZW4K
+CnRvdWNoIC50YWJsZV93YWl0CmZpCgppZiBbIC1yICRkb3dubG9hZF9wYXRoLy50YWJsZSBdCnRo
+ZW4KCnRvdWNoIC50YWJsZQpmaQoKY2FzZSAiJDMiIGluCgphbGwpIGdyZXAgIjxmaWxlIG5hbWU9
+IiByZXNvdXJjZS54bWwgfCBjdXQgLWQgJyInIC1mIDIgPiAudGFibGUgOzsKCnRzaSkgZ3JlcCAi
+LnRzaSIgcmVzb3VyY2UueG1sIHwgY3V0IC1kICciJyAtZiAyID4gLnRhYmxlIDs7Cgp0c20pIGdy
+ZXAgIi50c20iIHJlc291cmNlLnhtbCB8IGN1dCAtZCAnIicgLWYgMiA+IC50YWJsZSA7OwoKdHM0
+KSBncmVwICJ0czQiIHJlc291cmNlLnhtbCB8IGN1dCAtZCAnIicgLWYgMiA+IC50YWJsZSA7OwoK
+KikgZWNobyAi7IKs7Jqp67KVOiB0cmQgKOyVsSDsvZTrk5wgW3B4eF0pICjrsoTsoIQg7L2U65Oc
+KSAoYWxsLCB0c2ksIHRzbSwgdHM0KSBbIO2MjOydvCDtgazquLAg6rOE7IKwIOustOyLnCAnYycg
+fCDtjIzsnbwg7YWM7J2067iU66eMIOuwm+q4sCAndCcgXSIgOzsKCmVzYWMKCndoaWxlIFsgLXMg
+LnRhYmxlIF0KZG8KCmZuYW1lPWBzZWQgLW4gMXAgLnRhYmxlYAoKYnVzeWJveCB3Z2V0IC1xICRk
+b3dubG9hZC8kc291cmNlX3BhdGgvJGZuYW1lCgppZiBbICQ/ID0gMSBdCnRoZW4KCmVjaG8gJ+uE
+pO2KuOybjO2BrCDsl5Drn6whJzsKZXhpdCA0CmZpCgpmY291bnQ9YHdjIC1sIC50YWJsZSB8IGN1
+dCAtZCAnLicgLWYgMWAKY2xlYXIKZWNobyAi64uk7Jq066Gc65Oc7ZWgIO2MjOydvOydtCAkZmNv
+dW50IOqwnCDrgqjsnYwiCgpzZWQgMWQgLnRhYmxlID4gLnRhYmxlX3dhaXQKCmNhdCAudGFibGVf
+d2FpdCA+IC50YWJsZQoKZG9uZQoKZWNobyAi7YyM7J28IOyyreyGjOykkS4uLiIKCnJtIC50YWJs
+ZQpybSAudGFibGVfd2FpdAoKZWNobyAiJDQiIHwgZ3JlcCAndCcKCmlmIFsgISAkPyA9IDEgXQoK
+dGhlbgoKcm0gcmVzb3VyY2UueG1sCgpmaQoKY2xlYXIKCmVjaG8gIuumrOyGjOyKpOqwgCDri6Ts
+mrTroZzrk5zrkKguIOqyveuhnCA9ICRkb3dubG9hZF9wYXRoIgoKZXhpdCAkPw==
+"
+
+case $1 in
+
+sys_install)
+
+cd /system/bin
+
+mount -o rw,remount /system
+
+if [ -r /system/bin/trd ]
+then
+
+trd_os=`grep 'Information' './trd' | cut -d ':' -f '2'`
+trd_version=`grep 'Information' './trd' | cut -d ':' -f '3'`
+trd_lang=`grep 'Information' './trd' | cut -d ':' -f '4'`
+
+if [ ! $trd_os = $trdi_os ]
+then
+
+echo 'OS is not matched.'
+
+echo 'Please remove the script that already exists and try again.'
+
+exit 1
+
+fi
+
+if [ ! $trd_lang = $trdi_lang ]
+then
+
+echo 'Language is not matched.'
+
+echo 'Please remove the script that already exists and try again.'
+
+exit 1
+
+fi
+
+if [ ! $trd_version -lt $trdi_version ]
+then
+
+echo 'Exist trd script.'
+exit 1
+
+else
+
+echo 'Update script'
+
+fi
+
+fi
+
+touch lock
+
+touch /system/bin/trd
+
+echo $data > lock
+
+base64 -d lock > /system/bin/trd
+
+chmod 755 /system/bin/trd
+
+rm lock
+
+echo 'Talesshop Resource Downloader is installed. (trd)'
+
+exit $?
+
+;;
+
+install)
+
+touch ./lock
+touch ./trd
+
+echo $data > ./lock
+
+base64 -d ./lock > ./trd
+
+chmod 755 ./trd
+
+rm ./lock
+
+if [ -r ./trd ]
+
+then
+
+echo 'Talesshop Resource Downloader is installed. (trd)'
+
+exit $?
+
+else
+
+echo 'Install error.'
+
+exit 1
+
+fi
+
+;;
+
+remove)
+
+rm ./trd
+
+rm /system/bin/trd
+
+if [ -r ./trd || -r /system/bin/trd ]
+
+then
+
+echo 'Remove error.'
+
+exit 1
+
+else
+
+echo 'Talesshop Resource Downloader is removed. (trd)'
+
+exit $?
+
+fi
+
+;;
+
+*)
+
+echo "Arg "$1" is invalid."
+
+exit 1
+
+;;
+
+esac
+
+echo 'Unknown error.'
+
+exit 2
